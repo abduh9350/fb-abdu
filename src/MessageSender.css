@@ -32,10 +32,13 @@
     display: none;
 }
 
-.messageSender_bottom {
+.messageSender_input {
     flex: 1;
+}
+
+.messageSender_bottom {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     
 
 }
