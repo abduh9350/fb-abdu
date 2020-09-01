@@ -32,8 +32,30 @@
     display: none;
 }
 
-.mssageSender_bottom {
+.messageSender_bottom {
     flex: 1;
     display: flex;
+    justify-content: center;
+    
 
+}
+
+.messageSender_option {
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    color: gray;
+    margin: 5px;
+    
+}
+
+.messageSender_option:hover {
+    background-color: #eff2f5;
+    border-radius: 20px;
+};
+
+.messageSender_option > h3 {
+    font-size: medium;
+    margin-left: 10px;
+    cursor: pointer;
 }
