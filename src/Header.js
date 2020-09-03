@@ -11,7 +11,11 @@ import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ForumIcon from '@material-ui/icons/Forum';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
+import { useStateValue } from './StateProvider';
+
 function Header() {
+    const [{ user }, dispatch] = useStateValue();
+
     return (
         <div className='header'>
             <div className='header_left'>
@@ -43,8 +47,8 @@ function Header() {
             </div>
             <div className='header_middle'>
                 <div className='header_info'>
-                    <Avatar />
-                    <h4>Abdu Jemal</h4>
+                    <Avatar src={user.photoURL} />
+                    <h4>{user.displayName}</h4>
                 </div>
                 <IconButton>
                     <AddIcon />
