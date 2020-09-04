@@ -21,7 +21,7 @@ function MessageSender() {
             message: input,
             timestamp: new Date(),
             profilePic: user.photoURL,
-            usename: user.displayName,
+            username: user.displayName,
             image: imageUrl
         })
         setInput('');
