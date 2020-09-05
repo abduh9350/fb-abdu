@@ -1,6 +1,8 @@
 https://abdu-fb.web.app/
 Facebook Cloned 
 
+This is my first fullstack app. It has a google authentication. User can post message and image. They also ca see other users posts. I used React, Material-UI, Javascript, CSS, firebase real-time db.
+
 
 
 
